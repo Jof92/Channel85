@@ -26,7 +26,7 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color:  #0049e8 !important;
   color: white !important;
 }
 
@@ -35,8 +35,9 @@ a {
 }
 
 .react-player {
-  height: 77vh !important;
-  width: 100% !important;
+  height: 65vh !important;
+  width: 98% !important;
+  padding-left: 5px;
 }
 
 .search-bar{
