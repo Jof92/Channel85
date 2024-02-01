@@ -27,9 +27,12 @@ const SearchBar = () => {
             borderRadius: 20,
             border: '1px solid #e3e3e3',
             pl: 2,
+            width: {md: '25%', xs: '60%'},
             boxShadow: 'none',
-            mr: {sm: 5 }
+            mr: {sm: 5 },
+            display:'flex',
         }}
+        
     >
         <input
         className="search-bar"

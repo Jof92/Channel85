@@ -25,10 +25,10 @@ const VideoDetail = () => {
   const { viewCount, likeCount } = statistics || {};
 
   return (
-    <Box minHeight="95vh">
+    <Box minHeight="85vh">
       <Stack direction={{ xs: 'column', md:'row'}}>
         <Box flex={1}>
-          <Box sx={{ width: '100%', position: 'sticky', top:'86px'}}>
+          <Box sx={{ width:{ xs: '100%', md:'85%'}, position: 'sticky', top:'86px'}}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}className="react-player"  controls/>
             {title && (
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
@@ -42,7 +42,7 @@ const VideoDetail = () => {
                   <CheckCircle sx={{ fontSize: '12px', color: 'green', ml: '5px'}}/>
                 </Typography>
               </Link>
-              <Stack direction='row' gap="20px" alignItems='center'>
+              <Stack direction="row" gap="20px" alignItems="center">
                 <Typography variant="body1" sx={{ opacity: 0.7}} ml='50px'>
                 <span role="img" aria-label="view" >📺</span>
                 {parseInt(viewCount).toLocaleString()} views
@@ -54,7 +54,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-          <Box px={2} py={{md: 1, xs: 5}}       justifyContent="center"   alignItems="center">
+          <Box px={2} py={{md: 1, xs: 5}} justifyContent="center" alignItems="center">
               <Videos videos={videos} direction="column"/>
         </Box>
       </Stack>

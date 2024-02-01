@@ -17,8 +17,6 @@ export const logo = 'https://github.com/Jof92/Jof923/raw/main/aaa.png';
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
   { name: 'Jof Channel', icon: <CodeIcon />, },
-  { name: 'Coding', icon: <CodeIcon />, },
-  { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
