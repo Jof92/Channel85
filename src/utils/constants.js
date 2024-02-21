@@ -1,6 +1,5 @@
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import HomeIcon from '@mui/icons-material/Home';
-import CodeIcon from '@mui/icons-material/Code';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
@@ -16,7 +15,7 @@ export const logo = 'https://github.com/Jof92/Jof923/raw/main/aaa.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
-  { name: 'Jof Channel', icon: <CodeIcon />, },
+  { name: 'Jof Channel85', icon: '⭐', },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
