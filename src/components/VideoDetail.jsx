@@ -36,7 +36,7 @@ const VideoDetail = () => {
     <Box minHeight="85vh">
       <Stack direction={{ xs: 'column', md:'row'}}>
         <Box flex={1}>
-          <Box sx={{ width:{ xs: '100%', md:' 90%'}, position: 'sticky', top:'86px'}}>
+          <Box sx={{ width:{ xs: '98%', md:' 95%'}, position: 'sticky', top:'86px', marginLeft: 'auto', marginRight: 'auto'}}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}className="react-player"  controls/>
             {title && (
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
@@ -45,7 +45,7 @@ const VideoDetail = () => {
           )}
             <Stack direction="row" justifyContent="space-between" sx={{ color: '#fff' }} py={1} px={2}>
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: 'subtitle1', md: 'h6'}} color="#fff" fontSize='22px'display="flex" alignItems="center">
+                <Typography variant={{ sm: 'subtitle1', md: 'h6'}} color="#fff" fontSize='22px'display="flex" alignItems="center" ml='auto' mr='auto'>
                 <img
                     src={channelDetail.snippet?.thumbnails?.high?.url || 'URL_PADRAO_DA_IMAGEM'}
                     alt="Channel Thumbnail"
@@ -67,7 +67,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-          <Box px={2} py={{md: 1, xs: 5}} justifyContent="center" alignItems="center" pr='30px'>
+          <Box px={2} py={{md: 1, xs: 5}} justifyContent="center" alignItems="center">
               <Videos videos={videos} direction="column"/>
         </Box>
       </Stack>

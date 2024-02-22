@@ -58,7 +58,6 @@ a {
   background: transparent;
   outline: none;
   border: none;
-
   padding: 7px 15px;
   margin: 10px 0px;
   border-radius: 20px;
@@ -84,8 +83,10 @@ a {
 
   .react-player {
     height: 45vh !important;
+    padding: 1px;
   }
   .search-bar{
     width:200px;
-  }
+  }  
+
 }
