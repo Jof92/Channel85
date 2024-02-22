@@ -55,7 +55,7 @@ const VideoDetail = () => {
                   <CheckCircle sx={{ fontSize: '12px', color: 'green', ml: '5px'}}/>
                 </Typography>
               </Link>
-              <Stack direction="row" gap="20px" alignItems="center">
+              <Stack direction={{ xs: 'column', md: 'row' }} gap="20px" alignItems={{xm:"start", md:"center"}}>
                 <Typography variant="body1" sx={{ opacity: 0.7}} ml='50px'>
                 <span role="img" aria-label="view" >📺</span>
                 {parseInt(viewCount).toLocaleString()} views
