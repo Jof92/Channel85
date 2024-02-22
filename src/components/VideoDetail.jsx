@@ -45,7 +45,7 @@ const VideoDetail = () => {
           )}
             <Stack direction="row" justifyContent="space-between" sx={{ color: '#fff' }} py={1} px={2}>
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: 'subtitle1', md: 'h6'}} color="#fff" fontSize='22px'display="flex" alignItems="center" ml='auto' mr='auto'>
+                <Typography variant={{ sm: 'subtitle1', md: 'h6'}} color="#fff"  fontSize={{xs: '18px', md: '22px',}}display="flex" alignItems="center" ml='auto' mr='auto'>
                 <img
                     src={channelDetail.snippet?.thumbnails?.high?.url || 'URL_PADRAO_DA_IMAGEM'}
                     alt="Channel Thumbnail"
