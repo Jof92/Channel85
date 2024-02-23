@@ -43,7 +43,7 @@ const VideoDetail = () => {
               {title}
             </Typography>
           )}
-            <Stack direction="row" justifyContent="space-between" sx={{ color: '#fff' }} py={1} px={2}>
+            <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" sx={{ color: '#fff' }} py={1} px={2} border="1px solid #1E90FF" borderRadius='20px'>
               <Link to={`/channel/${channelId}`}>
                 <Typography variant={{ sm: 'subtitle1', md: 'h6'}} color="#fff"  fontSize={{xs: '18px', md: '22px',}}display="flex" alignItems="center" ml='auto' mr='auto'>
                 <img
@@ -55,8 +55,8 @@ const VideoDetail = () => {
                   <CheckCircle sx={{ fontSize: '12px', color: 'green', ml: '5px'}}/>
                 </Typography>
               </Link>
-              <Stack direction={{ xs: 'column', md: 'row' }} gap="20px" alignItems={{xm:"start", md:"center"}}>
-                <Typography variant="body1" sx={{ opacity: 0.7}} ml='50px'>
+              <Stack direction='row' gap="20px" alignItems="center" mt="10px" >
+                <Typography variant="body1" sx={{ opacity: 0.7}}>
                 <span role="img" aria-label="view" >📺</span>
                 {parseInt(viewCount).toLocaleString()} views
                 </Typography>
